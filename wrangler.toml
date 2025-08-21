@@ -1,0 +1,17 @@
+name = "wrangler-python-tester"
+main = "src/entry.py"
+compatibility_date = "2025-08-15"
+
+# Keep Python Workers enabled
+compatibility_flags = [
+  "python_workers",
+]
+
+# If you want to restrict who can call your endpoint, set a secret TOKEN
+# and uncomment the "vars" binding to provide CORS origin
+[vars]
+ALLOWED_ORIGIN = "https://patrick-duboucherryan-wzdr.squarespace.com"
+TOKEN = "6hrxk3Fn1Uie1UaLrzHFuF"
+
+[observability.logs]
+enabled = true

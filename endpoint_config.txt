@@ -1,0 +1,14 @@
+
+
+
+# CORS preflight should be 204 with CORS headers
+curl -i -X OPTIONS "wrangler-python-tester.patrick-duboucher-d9f.workers.dev" \
+  -H "Origin: https://patrick-duboucherryan-wzdr.squarespace.com" \
+  -H "Access-Control-Request-Method: POST" \
+  -H "Access-Control-Request-Headers: authorization, content-type"
+
+# health should be 200 "ok"
+curl -i "https://wrangler-python-tester.patrick-duboucher-d9f.workers.dev/health"
+
+
+wrangler-python-tester.patrick-duboucher-d9f.workers.dev 

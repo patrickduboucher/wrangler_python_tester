@@ -11,4 +11,15 @@ curl -i -X OPTIONS "wrangler-python-tester.patrick-duboucher-d9f.workers.dev" \
 curl -i "https://wrangler-python-tester.patrick-duboucher-d9f.workers.dev/health"
 
 
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{"name": "Python"}' http://wrangler-python-tester.patrick-duboucher-d9f.workers.dev 
+
+
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{"name": "Python"}' http://localhost:8787
+
+npx wrangler@latest dev
+
 wrangler-python-tester.patrick-duboucher-d9f.workers.dev 

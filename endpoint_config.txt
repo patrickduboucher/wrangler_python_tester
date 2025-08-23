@@ -20,6 +20,8 @@ curl --header "Content-Type: application/json" \
   --request POST \
   --data '{"name": "Python"}' http://localhost:8787
 
+curl -i "http://localhost:8787"
+
 npx wrangler@latest dev
 
 wrangler-python-tester.patrick-duboucher-d9f.workers.dev 

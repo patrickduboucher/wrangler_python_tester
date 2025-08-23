@@ -1,7 +1,5 @@
 from workers import WorkerEntrypoint, Response
-from hello import hello
 
 class Default(WorkerEntrypoint):
-    async def fetch(self, request):
-        name = (await request.json().name)
-        return Response(hello(name))
+    async def fetch(self, request, env):
+        return Response(env.API_HOST)

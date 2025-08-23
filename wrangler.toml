@@ -12,6 +12,7 @@ compatibility_flags = [
 [vars]
 ALLOWED_ORIGIN = "https://patrick-duboucherryan-wzdr.squarespace.com"
 TOKEN = "6hrxk3Fn1Uie1UaLrzHFuF"
+API_HOST = "example.com"
 
 [observability.logs]
 enabled = true
